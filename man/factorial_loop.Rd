@@ -7,7 +7,7 @@
 factorial_loop(n)
 }
 \arguments{
-\item{num}{the integer to calculate the factorial}
+\item{n}{the integer to calculate the factorial}
 }
 \value{
 the factorial

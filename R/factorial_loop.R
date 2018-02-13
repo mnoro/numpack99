@@ -2,7 +2,7 @@
 #'
 #' Calculates the factorial using a loop.
 #'
-#' @param num the integer to calculate the factorial
+#' @param n the integer to calculate the factorial
 #'
 #' @return the factorial
 #'
