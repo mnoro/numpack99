@@ -3,7 +3,12 @@
 numpack99
 =========
 
-The goal of numpack99 is to ...
+The goal of numpack99 is to provide a number of useful numeric calculation functions.
+
+Status of build
+---------------
+
+\[![Travis](https://travis-ci.org/mnoro/numpack99/builds/341405470#)\]
 
 Installation
 ------------
