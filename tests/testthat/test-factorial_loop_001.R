@@ -1,4 +1,4 @@
-context("Correct Calculations")
+context("Correct Calculations for Factorial")
 
 test_that("The calculations are fine", {
   expect_equal(factorial_loop(4), 24)

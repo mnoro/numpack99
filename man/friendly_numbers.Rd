@@ -20,5 +20,6 @@ Returns a TRUE/FALSE to determine whether two integer numbers are friendly
 \examples{
 \dontrun{
 friendly_numbers(12, 16)
+friendly_numbers(220,284)
 }
 }
