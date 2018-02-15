@@ -18,5 +18,6 @@ Returns a vector with all the divisors
 \examples{
 \dontrun{
 divisors(12)
+divisors(1400)
 }
 }

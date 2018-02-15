@@ -29,6 +29,7 @@ friendly_numbers <- function(num1, num2){
 #' @examples
 #' \dontrun{
 #' divisors(12)
+#' divisors(1400)
 #' }
 #' @export
 divisors <- function(num){
