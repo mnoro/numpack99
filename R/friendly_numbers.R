@@ -38,3 +38,24 @@ divisors <- function(num){
   #  If remainder is 0 that number is a divisor of x so return it
   y[ num%%y == 0 ]
 }
+#' Determines whether a number is perfect or not
+#'
+#' Returns a logical TRUE/FALSE
+#'
+#' @param num the integer number
+#'
+#' @return TRUE or FALSE
+#'
+#' @examples
+#' \dontrun{
+#' perfect_number(12)
+#' perfect_number(6)
+#' }
+#' @export
+perfect_number <- function(num){
+  # if the sum of the proper divisors is equal to the number it is perfect
+  if(sum(divisors(num)) == num){
+    TRUE
+  } else {FALSE}
+
+}

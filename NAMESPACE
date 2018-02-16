@@ -3,3 +3,4 @@
 export(divisors)
 export(factorial_loop)
 export(friendly_numbers)
+export(perfect_number)
