@@ -2,7 +2,70 @@
 title: "numpack99 Vignettes"
 output: rmarkdown::html_vignette
 vignette: >
-  %\VignetteIndexEntry{Put the title of your vignette here}
+  %\VignetteIndexEntry{numpack99 vignette}
   %\VignetteEngine{knitr::rmarkdown}
   \usepackage[utf8]{inputenc}
 ---
+
+# Vignette on numpack99
+```{r echo=FALSE}
+source("../R/friendly_numbers.R")
+source("../R/factorial_loop.R")
+```
+
+
+
+**numpack99** offers access to a selection of functions to work with numbers.
+
+In particular the following:
+* amicable numbers
+* perfect numbers
+* proper divisors
+
+# Perfect Numbers
+
+In number theory a *perfect number* is a positive integer number which is also equivalent to the sum of its **proper divisors**.
+
+**Proper divisors** are all the divisors of a positive integer number except the number itself.
+For example the proper divisors of **4680** are:
+```{r}
+divisors(4680)
+```
+Their sum is:
+```{r}
+sum(divisors(4680))
+```
+The function to assess whether a number is perfect is:
+```{r}
+perfect_number(4680)
+```
+One way to see the perfect numbers between 1 and 1000 is as follows:
+```{r}
+x <- 1:1000
+x[sapply(x, perfect_number)]
+```
+# Amicable numbers
+
+Two positive integer numbers A and B are called amicable if the sums of the proper divisors of A is equal to B and the sums of the proper divisors of B is equal to A.
+
+The first ten amicable pairs are: (220, 284), (1184, 1210), (2620, 2924), (5020, 5564), (6232, 6368), (10744, 10856), (12285, 14595), (17296, 18416), (63020, 76084), and (66928, 66992).
+
+The function *friendly_numbers* allows you to test whwther two numbers are amicable or friendly.
+```{r}
+friendly_numbers(220, 284)
+friendly_numbers(17296, 18416)
+friendly_numbers(172960, 184160)
+```
+# Factorial
+
+Additionally the package provides a function to calculate factorials implemented as a loop.
+
+To use it:
+```{r}
+factorial_loop(10)
+```
+
+
+
+
+
